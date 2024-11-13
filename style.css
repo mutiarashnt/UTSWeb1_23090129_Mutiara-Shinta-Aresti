@@ -4,32 +4,66 @@
     font-family: "Poppins", sans-serif;
 }
 
-body header nav h1 {
-    font-size: 28px;
-    text-align: center
-}
-
 .navbar {
     display: flex;
     color: white;
     background-color: #5d3b2c;
+    align-items: center;
     justify-content: space-between;
     padding-left: 35px;
     padding-right: 20px;
 }
 
+.navbar h1 {
+    font-size: 28px;
+}
+
 .navbar ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
-.navbar ul li {
-    margin: 1em;
-}
-
-.navbar a {
+.navbar ul li a {
     color: white;
+    margin: 16px;
     text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #ffefca;
+}
+
+.menu-icon {
+    font-size: 24px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar ul.hidden {
+        display: none;
+    }
+
+    .navbar ul li {
+        margin: 10px;
+        padding-right: 30px;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
 }
 
 .desc-company {
@@ -40,13 +74,12 @@ body header nav h1 {
 }
 
 .description {
-    flex-wrap: 1;
     margin-left: 70px;
     margin-right: 180px;
 }
 
 .logo {
-    margin-right: 200px;
+    margin-right: 180px;
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -58,7 +91,7 @@ body header nav h1 {
     padding-bottom: 70px;
 }
 
-.service p{
+.service p {
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -106,13 +139,16 @@ table tbody tr:nth-child(even) {
     border-radius: 10px;
 }
 
-.kontak{
+.kontak {
     border-bottom: 2px solid #5d3b2c;
-    margin: 50px;
     padding-bottom: 50px;
 }
 
-footer{
+.about-us{
+    padding-top: 30px;
+}
+
+footer {
     text-align: center;
     background-color: #ffefca;
     padding: 30px;

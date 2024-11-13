@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hwan Donuts</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -13,7 +14,10 @@
         <nav>
             <div class="navbar">
                 <h1>HWAN DONUTS</h1>
-                <ul>
+                <div id="menu-icon" class="menu-icon">
+                    <i class="ph ph-list"></i>
+                </div>
+                <ul id="menu-list" class="hidden">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Contact">Contact</a></li>
@@ -24,23 +28,26 @@
 
 
     <main>
-        <section class="desc-company">
+        <section id="Home" class="desc-company">
             <div class="logo">
                 <img src="Hwan Donuts.png" alt="Hwan Donuts" width="300px" height="300px">
             </div>
             <div class="description">
                 <p><b>Selamat datang di Hwan Donuts, temukan kelezatan di setiap gigitan!</b></p>
                 <p>Rasakan kelezatan yang tak terlupakan dengan setiap gigitan donat kami. Dibuat dari bahan berkualitas
-                    dan diproses dengan penuh cinta, donat kami hadir dengan berbagai pilihan rasa dari klasik manis hingga
+                    dan diproses dengan penuh cinta, donat kami hadir dengan berbagai pilihan rasa dari klasik manis
+                    hingga
                     varian unik yang perlu Anda coba.</p>
                 <button>Selengkapnya</button>
             </div>
         </section>
 
-        <section class="service">
+        <section id="About" class="service">
             <h2><b>LAYANAN KAMI</b></h2>
-            <p>Kami menyajikan donat yang baru digoreng setiap hari untuk menjamin kualitas rasa dan tekstur yang terbaik. Tersedia beragam pilihan
-                rasa yang menarik, dengan harga mulai dari Rp6.000. Kami menerima pesanan untuk acara dan siap mengantar ke tempat Anda.</p>
+            <p>Kami menyajikan donat yang baru digoreng setiap hari untuk menjamin kualitas rasa dan tekstur yang
+                terbaik. Tersedia beragam pilihan
+                rasa yang menarik, dengan harga mulai dari Rp6.000. Kami menerima pesanan untuk acara dan siap mengantar
+                ke tempat Anda.</p>
             <br>
             <table border="1" width="50%" height="20%" align="center">
                 <thead align="center">
@@ -162,8 +169,8 @@
 
 
     <footer>
-        <div class="kontak">
-            <h3><b>KONTAK KAMI</b></h3>
+        <div id="Contact" class="kontak">
+            <h3><b>Kritik dan Saran</b></h3>
             <label for="">Nama</label>
             <input type="text" placeholder="Masukkan nama Anda...">
             <br>
@@ -178,7 +185,10 @@
             <button>Kirim</button>
         </div>
 
-        <div class="about">
+        <div class="about-us">
+            <h3><b>KONTAK KAMI</b></h3>
+            <p>E-mail : hwandonuts@gmail.com </p>
+            <p>Telepon : +62 878-2309-0129</p>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
                 integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -189,5 +199,7 @@
         </div>
     </footer>
 </body>
+
+<script src="script.js"></script>
 
 </html>
